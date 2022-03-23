@@ -1,0 +1,1 @@
+{ "env": [ { "DELIGHT":"C:\\Program Files\\3Delight" }, { "HOUDINI_PATH":"$DELIGHT\\houdini\\19.0" } ] }
