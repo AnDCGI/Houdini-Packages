@@ -1,0 +1,7 @@
+{
+	"env" : [
+		{
+			"OCIO" : "$VFX/OpenColorIO/aces_1.0.3/config.ocio"
+		}
+	]
+}
