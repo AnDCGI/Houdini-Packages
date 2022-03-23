@@ -1,0 +1,25 @@
+{
+    "env": [
+        {
+            "RMANTREE": "C:/Program Files/Pixar/RenderManProServer-24.3"
+        },
+        {
+            "RFHTREE": "C:/Program Files/Pixar/RenderManForHoudini-24.3-py3/"
+        },
+        {
+            "RMAN_PROCEDURALPATH": 
+            {
+                "value": "$RFHTREE/19.0.455/openvdb",
+                "method": "prepend"
+            } 
+        },
+        {
+            "PATH":
+            { 
+                "value": "$RMANTREE/bin",
+                "method": "prepend"
+            }
+        }
+    ],
+    "path": "$RFHTREE/19.0.455"
+}
