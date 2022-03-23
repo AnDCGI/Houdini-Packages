@@ -1,0 +1,14 @@
+{
+    "env":
+    [
+        {
+            "HOUDINI_SPLASH_FILE": "R://Assets//Resources//Spalsh//MetaSpiral.png"
+        },
+        {
+            "HOUDINI_SPLASH_MESSAGE" = "Welcome//n${USER} @ ${HOSTNAME}//n${HOUDINI_VERSION}//nGood Luck!"
+        }'
+        {
+            "HOUDINI_NO_START_PAGE_SPLASH" = 1
+        }
+    ]
+}
