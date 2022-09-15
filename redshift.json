@@ -1,9 +1,0 @@
-{
-    "env": [
-        {
-            "PATH": "$PATH;C:\ProgramData\Redshift\bin",
-            "method": "append"
-        }
-    ],
-    "path": "C:\ProgramData\Redshift\Plugins\Houdini\18.5.532"
-}
