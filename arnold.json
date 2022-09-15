@@ -1,9 +1,0 @@
-{
-    "env": [
-        {
-            "PATH": "$PATH;C:/Users/Brian/Documents/houdini19.0/plugins/arnold/arnold/scripts/bin",
-            "method": "append"
-        }
-    ],
-    "path": "C:/Users/Brian/Documents/houdini19.0/plugins/arnold/arnold"
-}
