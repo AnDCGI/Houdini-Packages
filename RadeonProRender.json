@@ -1,0 +1,16 @@
+{
+    "env":[
+        {
+            "HDRPR_DIR":"J:/001_Softwares/hdRpr-2.2.41-Houdini-19.0.622-py3.7-Windows"
+        },
+        {
+            "HOUDINI_PATH":"$HDRPR_DIR/houdini"
+        },
+        {
+            "PATH":"$HDRPR_DIR/lib"
+        },
+        {
+            "PYTHONPATH":"$HDRPR_DIR/lib/python"
+        }
+    ]
+}
