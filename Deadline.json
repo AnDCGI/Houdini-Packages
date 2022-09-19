@@ -1,18 +1,24 @@
 {
-    "env": [
-        {
-            "DEADLINE_SUBMITTER_DIR": [
-                "$HOUDINI_PACKAGE_PATH",
-                {"houdini_os == 'windows'" :"$LOCALAPPDATA/Thinkbox/Deadline10/submitters/HoudiniSubmitter" },
-                {"houdini_os == 'linux'" : "$HOME/Thinkbox/Deadline10/submitters/HoudiniSubmitter"},
-                {"houdini_os == 'osx' or houdini_os == 'macos'": "$HOME/Library/Application Support/Thinkbox/Deadline10/submitters/HoudiniSubmitter"},
-            ]
-        },
-        {
-            "HOUDINI_PATH": "$DEADLINE_SUBMITTER_DIR"
-        },
-        {
-            "HOUDINI_MENU_PATH": "$DEADLINE_SUBMITTER_DIR"
-        }
-    ]
+   "env":[
+      {
+         "DEADLINE_SUBMITTER_DIR":[
+            "$HOUDINI_PACKAGE_PATH",
+            {
+               "houdini_os == 'windows'":"$LOCALAPPDATA/Thinkbox/Deadline10/submitters/HoudiniSubmitter"
+            },
+            {
+               "houdini_os == 'linux'":"$HOME/Thinkbox/Deadline10/submitters/HoudiniSubmitter"
+            },
+            {
+               "houdini_os == 'osx' or houdini_os == 'macos'":"$HOME/Library/Application Support/Thinkbox/Deadline10/submitters/HoudiniSubmitter"
+            }
+         ]
+      },
+      {
+         "HOUDINI_PATH":"$DEADLINE_SUBMITTER_DIR"
+      },
+      {
+         "HOUDINI_MENU_PATH":"$DEADLINE_SUBMITTER_DIR"
+      }
+   ]
 }
