@@ -1,27 +1,23 @@
 {
-    "path": "C:/ProgramData/Redshift", 
-    "env" : 
-    [
-
+    "path": "C:/ProgramData/Redshift",
+    "env": [
         {
-            "HOUDINI_DSO_ERROR" : "2"
+            "HOUDINI_DSO_ERROR": "2"
         },
         {
             "PATH": {
-                "method": "prepend", 
+                "method": "prepend",
                 "value": "C:/ProgramData/Redshift/bin"
             }
         },
         {
-            "HOUDINI_PATH" : 
-            {
+            "HOUDINI_PATH": {
                 "value": "C:/ProgramData/Redshift/Plugins/Houdini/19.0.589",
                 "method": "prepend"
             }
         },
         {
-            "PXR_PLUGINPATH_NAME" : 
-            {
+            "PXR_PLUGINPATH_NAME": {
                 "value": "C:/ProgramData/Redshift/Plugins/Solaris/19.0.589",
                 "method": "prepend"
             }
