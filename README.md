@@ -100,5 +100,4 @@ Checks specific package(s) availability without enforcing a dependency.
 Checks specific package(s) availability and enforces a dependency.
 
 # Futher Reading
-
-https://www.sidefx.com/docs/houdini/ref/plugins.html
+https://andcgi.medium.com/houdini-packages-multiple-render-engines-environment-variable-c517df426440
