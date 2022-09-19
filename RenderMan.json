@@ -7,15 +7,13 @@
             "RFHTREE": "C:/Program Files/Pixar/RenderManForHoudini-24.4-py3/"
         },
         {
-            "RMAN_PROCEDURALPATH": 
-            {
+            "RMAN_PROCEDURALPATH": {
                 "value": "$RFHTREE/19.0.589/openvdb",
                 "method": "prepend"
-            } 
+            }
         },
         {
-            "PATH":
-            { 
+            "PATH": {
                 "value": "$RMANTREE/bin",
                 "method": "prepend"
             }
