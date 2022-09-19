@@ -1,14 +1,13 @@
 {
-	"env" :
-	[
-		{
-		"OCTANE_ROOT":"J:\001_Softwares\Octane_2021.1.4.1_Houdini_19.0.589_demo_Win64"
-		},
-		{
-		"HOUDINI_PATH":"$OCTANE_ROOT"
-		},
-		{
-		"PATH":"$OCTANE_ROOT/bin"
-		}
-	]
+  "env": [
+    {
+      "OCTANE_ROOT": "J:\001_Softwares\Octane_2021.1.4.1_Houdini_19.0.589_demo_Win64"
+    },
+    {
+      "HOUDINI_PATH": "$OCTANE_ROOT"
+    },
+    {
+      "PATH": "$OCTANE_ROOT/bin"
+    }
+  ]
 }
