@@ -1,16 +1,14 @@
 {
-    "path": "C:/Users/DJ_Dh/htoa/htoa-6.1.2.0_re046489_houdini-19.0.589.py3/htoa-6.1.2.0_re046489_houdini-${HOUDINI_VERSION}.py3/scripts/bin", 
-    "env" : 
-    [
-		{
-            "HOUDINI_PATH" : "C:/Users/DJ_Dh/htoa/htoa-6.1.2.0_re046489_houdini-19.0.589.py3/htoa-6.1.2.0_re046489_houdini-${HOUDINI_VERSION}.py3"
-            },
-
-        {
-            "PATH": {
-                "method": "prepend", 
-                "value": "C:/Users/DJ_Dh/htoa/htoa-6.1.2.0_re046489_houdini-19.0.589.py3/htoa-6.1.2.0_re046489_houdini-${HOUDINI_VERSION}.py3/scripts/bin"
-            }
-        },
-    ]
+   "path":"C:/Users/DJ_Dh/htoa/htoa-6.1.2.0_re046489_houdini-19.0.589.py3/htoa-6.1.2.0_re046489_houdini-${HOUDINI_VERSION}.py3/scripts/bin",
+   "env":[
+      {
+         "HOUDINI_PATH":"C:/Users/DJ_Dh/htoa/htoa-6.1.2.0_re046489_houdini-19.0.589.py3/htoa-6.1.2.0_re046489_houdini-${HOUDINI_VERSION}.py3"
+      },
+      {
+         "PATH":{
+            "method":"prepend",
+            "value":"C:/Users/DJ_Dh/htoa/htoa-6.1.2.0_re046489_houdini-19.0.589.py3/htoa-6.1.2.0_re046489_houdini-${HOUDINI_VERSION}.py3/scripts/bin"
+         }
+      }
+   ]
 }
