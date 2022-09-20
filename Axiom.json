@@ -1,0 +1,52 @@
+{
+    "env": [
+        {
+            "AXIOM_V02_B002": "$HOUDINI_PACKAGE_PATH/axiom_v02_b002"
+        },
+        {
+            "AXIOM_V02_B002_METAL_LIBRARY": "$HOUDINI_PACKAGE_PATH/axiom_v02_b002/metal/axiom_core_v02_b002.metallib"
+        },
+        {
+            "HOUDINI_PATH" :
+            [
+                "$AXIOM_V02_B002",
+                {
+                    "houdini_version == '19.5.368'" : "$AXIOM_V02_B002/houdini19_5_368",
+                    "method": "append"
+                },
+                {
+                    "houdini_version == '19.5.303'" : "$AXIOM_V02_B002/houdini19_5_303",
+                    "method": "append"
+                },
+                {
+                    "houdini_version == '19.0.720'" : "$AXIOM_V02_B002/houdini19_0_720",
+                    "method": "append"
+                },
+                {
+                    "houdini_version == '19.0.657'" : "$AXIOM_V02_B002/houdini19_0_657",
+                    "method": "append"
+                },
+                {
+                    "houdini_version == '19.0.622'" : "$AXIOM_V02_B002/houdini19_0_622",
+                    "method": "append"
+                },
+                {
+                    "houdini_version == '18.5.759'" : "$AXIOM_V02_B002/houdini18_5_759",
+                    "method": "append"
+                },
+                {
+                    "houdini_version == '18.5.696'" : "$AXIOM_V02_B002/houdini18_5_696",
+                    "method": "append"
+                },
+                {
+                    "houdini_version == '18.0.597'" : "$AXIOM_V02_B002/houdini18_0_597",
+                    "method": "append"
+                },
+                {
+                    "houdini_version != '19.5.368' and houdini_version != '19.5.303' and houdini_version != '19.0.720' and houdini_version != '19.0.657' and houdini_version != '19.0.622' and houdini_version != '18.5.759' and houdini_version != '18.5.696' and houdini_version != '18.0.597'" : "$AXIOM_V02_B002/info",
+                    "method": "append"
+                },
+            ]
+        }
+    ]
+}
