@@ -1,0 +1,12 @@
+{
+	"env": [
+		{
+			"MOPS": "$VFX/MOPS"
+		},
+		{
+			"HOUDINI_PYTHONWARNINGS": "ignore"
+		},
+	],
+	"path": "$MOPS"
+	
+}

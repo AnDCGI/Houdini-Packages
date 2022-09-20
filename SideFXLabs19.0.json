@@ -1,0 +1,19 @@
+{
+    "path": "$SIDEFXLABS",
+    "load_package_once": true,
+    "enable": "houdini_version >= '19.0' and houdini_version < '19.1'",
+    "version": "19.0.720",
+    "env": [
+        {
+            "SIDEFXLABS": "$HOUDINI_PACKAGE_PATH/../SideFXLabs/19.0.720\\SideFXLabs19.0"
+        },
+        {
+            "PATH": {
+                "method": "prepend",
+                "value": [
+                    "$SIDEFXLABS/bin"
+                ]
+            }
+        }
+    ]
+}
