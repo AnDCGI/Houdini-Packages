@@ -1,0 +1,10 @@
+{
+	"env": [
+        {
+			"AELIB": "$VFX/Aelib"
+        }
+	],
+	"path": [
+        "$AELIB"
+    ]
+}
