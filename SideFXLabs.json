@@ -1,0 +1,11 @@
+{
+    "path": "$SIDEFXLABS",
+    "load_package_once": true,
+    "enable": "houdini_version >= '19.5' and houdini_version < '19.6'",
+    "version": "19.5.805",
+    "env": [
+        {
+            "SIDEFXLABS": "$HOUDINI_PACKAGE_PATH/SideFXLabs19.5"
+        }
+    ]
+}
