@@ -1,23 +1,45 @@
 {
+    "load_package_once": true,
     "env": [
         {
-            "RMANTREE": "C:/Program Files/Pixar/RenderManProServer-24.4"
+            "RMANTREE": "C:/Program Files/Pixar/RenderManProServer-25.2"
         },
         {
-            "RFHTREE": "C:/Program Files/Pixar/RenderManForHoudini-24.4-py3/"
+            "RFHTREE": "C:/Program Files/Pixar/RenderManForHoudini-25.2/"
         },
         {
-            "RMAN_PROCEDURALPATH": {
-                "value": "$RFHTREE/19.0.589/openvdb",
+            "RFH_HOUDINI_VERS" :
+            [
+                {"houdini_version<'20.0' and houdini_version>='19.5.640'": "19.5.640"},
+                {"houdini_version<'19.5.640' and houdini_version>='19.5.605'": "19.5.605"},
+                {"houdini_version<'19.5.605' and houdini_version>='19.5.569'": "19.5.569"},
+                {"houdini_version<'19.5' and houdini_version>='19.0.720'": "19.0.720"},
+                {"houdini_version<'19.0' and houdini_version>='18.5.759'": "18.5.759"}
+            ]
+        },
+        {
+            "RFH_PY_VERS":
+            [
+                { "houdini_python=='python2'": "2.7" },
+                { "houdini_python=='python3' and houdini_version<'19.5'": "3.7" },
+                { "houdini_python=='python3.7'": "3.7" },
+                { "houdini_python=='python3.9'": "3.9" },
+            ]
+        },
+        { "HOUDINI_PATH": "${RFHTREE}/${RFH_PY_VERS}/${RFH_HOUDINI_VERS}" },
+        {
+            "RMAN_PROCEDURALPATH": 
+            {
+                "value": "${RFHTREE}/${RFH_PY_VERS}/${RFH_HOUDINI_VERS}/openvdb",
                 "method": "prepend"
-            }
+            } 
         },
         {
-            "PATH": {
-                "value": "$RMANTREE/bin",
+            "PATH":
+            { 
+                "value": "${RMANTREE}/bin",
                 "method": "prepend"
             }
         }
-    ],
-    "path": "$RFHTREE/19.0.589"
+    ]
 }
