@@ -1,14 +1,35 @@
 {
-   "path":"C:/Users/DJ_Dh/htoa/htoa-6.1.2.0_re046489_houdini-19.0.589.py3/htoa-6.1.2.0_re046489_houdini-${HOUDINI_VERSION}.py3/scripts/bin",
-   "env":[
-      {
-         "HOUDINI_PATH":"C:/Users/DJ_Dh/htoa/htoa-6.1.2.0_re046489_houdini-19.0.589.py3/htoa-6.1.2.0_re046489_houdini-${HOUDINI_VERSION}.py3"
-      },
-      {
-         "PATH":{
-            "method":"prepend",
-            "value":"C:/Users/DJ_Dh/htoa/htoa-6.1.2.0_re046489_houdini-19.0.589.py3/htoa-6.1.2.0_re046489_houdini-${HOUDINI_VERSION}.py3/scripts/bin"
-         }
-      }
-   ]
+    "enable": true,
+    "load_package_once": true,
+    "env":
+    [
+        {
+            "HTOA_PY_SUFFIX": [
+                {"houdini_python=='python3.10'": ".py310"}
+            ]
+        },
+        {
+            "HTOA_GCC_SUFFIX":
+            [
+                {"houdini_os=='linux' and houdini_platform_build=='gcc.9.3'":  "_gcc9"},
+                {"houdini_os=='linux' and houdini_platform_build=='gcc.11.2'": "_gcc11"}
+            ]
+        },
+        {"HTOA_ROOT": "C:/Users/DJ_Dh/htoa/htoa-6.3.6.0_rdb9241e_houdini-20.5.445/htoa-6.3.6.0_rdb9241e_houdini-20.5.445"},
+        {"HTOA_ROOT": "${HTOA_ROOT}${HTOA_PY_SUFFIX}${HTOA_GCC_SUFFIX}"},
+        {"HOUDINI_PATH": [
+                {
+                    "value": "$HTOA_ROOT",
+                    "method": "prepend"
+                }
+            ]
+        },
+        {"PATH": [
+                {
+                    "value": "$HTOA_ROOT/scripts/bin",
+                    "method": "prepend"
+                }
+            ]
+        }
+    ]
 }
